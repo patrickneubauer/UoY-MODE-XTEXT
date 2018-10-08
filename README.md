@@ -64,8 +64,9 @@ Select the *Entry Rule* for your grammar and finalize the wizard by clicking the
 
 At this point in time you may edit your grammar and once you are satisfied with its state, you can trigger the MWE2 workflow to auto-generate the components of your DSL by right-clicking on the *.mwe2 file and selecting *Run As > MWE2 Workflow* and finally launch your editor as described above (see *How to run your Xtext DSL editor).
 
-![Run MWE2 workflow](images/run-mwe2-workflow.png)
+![Run MWE2 workflow](images/1-run-mwe2-workflow.png)
 
+![Run MWE2 workflow](images/2-run-mwe2-workflow.png)
 
 ### Further resources:
 
