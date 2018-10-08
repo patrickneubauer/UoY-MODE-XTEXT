@@ -10,9 +10,9 @@ This repository contains instructions on how to install Eclipse and Xtext as wel
 
 First, download Eclipse Epsilon distribution from the [Eclipse Epsilon website](http://www.eclipse.org/epsilon/download/) and follow the installation instructions.
 
-![Xtext Installation (part 1)](images/1-xtext-installation.png)
-
 Secondly, once Eclipse is installed, the Xtext framework needs to be installed through the *Install New Software...* dialog. Copy the [Xtext Update Site link](http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/) (found on the [Xtext website](http://www.eclipse.org/Xtext/download.html)) and add it as a new repository to the Eclipse software installer.
+
+![Xtext Installation (part 1)](images/1-xtext-installation.png)
 
 ![Xtext Installation (part 2)](images/2-xtext-installation.png)
 
@@ -62,7 +62,9 @@ Select the *Entry Rule* for your grammar and finalize the wizard by clicking the
 
 ![Create new Xtext project from existing Ecore (part 3)](images/3-create-new-xtext-project-from-existing-ecore.png)
 
-At this point in time you may edit your grammar and once you are satisfied with its state, you can trigger the MWE2 workflow to auto-generate the components of your DSL by right-clicking on the *.mwe2 file and selecting *Run As > MWE2 Workflow*.
+At this point in time you may edit your grammar and once you are satisfied with its state, you can trigger the MWE2 workflow to auto-generate the components of your DSL by right-clicking on the *.mwe2 file and selecting *Run As > MWE2 Workflow* and finally launch your editor as described above (see *How to run your Xtext DSL editor).
+
+![Run MWE2 workflow](images/run-mwe2-workflow.png)
 
 
 ### Further resources:
