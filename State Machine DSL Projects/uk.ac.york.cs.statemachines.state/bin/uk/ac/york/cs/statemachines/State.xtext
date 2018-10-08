@@ -1,0 +1,26 @@
+grammar uk.ac.york.cs.statemachines.States with org.eclipse.xtext.common.Terminals
+
+import "http://www.cs.york.ac.uk/statemachines" 
+
+StateMachine returns StateMachine:
+	{StateMachine}
+	'events'
+		(events+=Event)+
+	'end'
+	('resetEvents'
+		(resetEvents+=[Event])+
+	'end')?
+	(states+=State)+;
+	
+Event returns Event:
+	{Event}
+	name=ID code = ID;
+	
+State returns State:
+	'state'	name=ID
+		(transitions+=Transition)*
+	'end';
+
+Transition returns Transition:
+	{Transition}
+	event=[Event] '=>' state=[State];

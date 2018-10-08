@@ -1,0 +1,16 @@
+type String
+type Boolean
+
+entity Conference {
+	property name : String
+	property attendees : Person []
+	property speakers : Speaker []
+}
+
+entity Person {
+	property name : String
+}
+
+entity Speaker extends Person {
+	
+}

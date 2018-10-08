@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: uk.ac.york.cs.entities.xtext
+Bundle-Vendor: Business Informatics Group
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: uk.ac.york.cs.entities.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: uk.ac.york.cs.entities,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.antlr.runtime,
+ org.eclipse.xtext.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: uk.ac.york.cs.entities,
+ uk.ac.york.cs.entities.formatting,
+ uk.ac.york.cs.entities.generator,
+ uk.ac.york.cs.entities.parser.antlr,
+ uk.ac.york.cs.entities.parser.antlr.internal,
+ uk.ac.york.cs.entities.scoping,
+ uk.ac.york.cs.entities.serializer,
+ uk.ac.york.cs.entities.services,
+ uk.ac.york.cs.entities.validation
+Import-Package: org.apache.log4j

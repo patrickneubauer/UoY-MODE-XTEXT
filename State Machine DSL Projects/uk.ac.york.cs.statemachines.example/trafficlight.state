@@ -1,0 +1,19 @@
+events
+	switchToRed TRed
+	switchToGreen TGreen
+	switchToYellow TYellow
+end
+
+state Red
+	switchToYellow => Yellow
+end
+
+state Yellow
+	switchToRed => Red
+	switchToGreen => Green
+end
+
+state Green
+	switchToYellow => Yellow
+end
+	

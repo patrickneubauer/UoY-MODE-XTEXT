@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated statemachines -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="uk.ac.york.cs.statemachines.presentation.StatemachinesModelWizardID"
+            name="%_UI_StatemachinesModelWizard_label"
+            class="uk.ac.york.cs.statemachines.presentation.StatemachinesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/StatemachinesModelFile.gif">
+         <description>%_UI_StatemachinesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated statemachines -->
+      <editor
+            id="uk.ac.york.cs.statemachines.presentation.StatemachinesEditorID"
+            name="%_UI_StatemachinesEditor_label"
+            icon="icons/full/obj16/StatemachinesModelFile.gif"
+            extensions="statemachines"
+            class="uk.ac.york.cs.statemachines.presentation.StatemachinesEditor"
+            contributorClass="uk.ac.york.cs.statemachines.presentation.StatemachinesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

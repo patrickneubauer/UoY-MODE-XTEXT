@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/uk.ac.york.cs.entities/src-gen" creationIcons="false"
+    editDirectory="/uk.ac.york.cs.entities.edit/src-gen" editorDirectory="/uk.ac.york.cs.entities.editor/src-gen"
+    modelPluginID="uk.ac.york.cs.entities" modelName="Entities" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>entities.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Entities" basePackage="uk.ac.york.cs" disposableProviderFactory="true"
+      ecorePackage="entities.ecore#/">
+    <genClasses ecoreClass="entities.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference entities.ecore#//Model/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="entities.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute entities.ecore#//Type/name"/>
+    </genClasses>
+    <genClasses ecoreClass="entities.ecore#//SimpleType"/>
+    <genClasses ecoreClass="entities.ecore#//Entity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference entities.ecore#//Entity/properties"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference entities.ecore#//Entity/extends"/>
+    </genClasses>
+    <genClasses ecoreClass="entities.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute entities.ecore#//Property/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference entities.ecore#//Property/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute entities.ecore#//Property/many"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

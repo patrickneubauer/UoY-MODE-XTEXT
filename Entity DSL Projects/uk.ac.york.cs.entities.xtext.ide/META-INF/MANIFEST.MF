@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: uk.ac.york.cs.entities.xtext.ide
+Bundle-Vendor: Business Informatics Group
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: uk.ac.york.cs.entities.xtext.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: uk.ac.york.cs.entities.xtext,
+ uk.ac.york.cs.entities,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: uk.ac.york.cs.entities.ide.contentassist.antlr.internal,
+ uk.ac.york.cs.entities.ide.contentassist.antlr
+
