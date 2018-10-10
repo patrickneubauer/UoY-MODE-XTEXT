@@ -10,11 +10,9 @@ This repository contains instructions on how to install Eclipse and Xtext as wel
 
 First, download Eclipse Epsilon distribution from the [Eclipse Epsilon website](http://www.eclipse.org/epsilon/download/) and follow the installation instructions.
 
-Secondly, once Eclipse is installed, the Xtext framework needs to be installed through the *Install New Software...* dialog. Copy the [Xtext Update Site link](http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/) (found on the [Xtext website](http://www.eclipse.org/Xtext/download.html)) and add it as a new repository to the Eclipse software installer.
+Secondly, once Eclipse is installed, the Xtext framework needs to be installed through the *Install New Software...* dialog. Select the Eclipse Photon repository at the *Work with:* drop-down menu and type "xtext" in the search field. Finally, select the checkbox for "Xtext Complete SDK", click *Next >*, accept the terms, and select *Finish* to complete the installation (Eclipse restart required).
 
-![Xtext Installation (part 1)](images/1-xtext-installation.png)
-
-![Xtext Installation (part 2)](images/2-xtext-installation.png)
+![Xtext Installation](images/xtext-installation.png)
 
 ### How to import an existing Xtext projects:
 
