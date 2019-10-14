@@ -70,8 +70,6 @@ At this point in time you may edit your grammar and once you are satisfied with 
 
  - [Xtext documentation and tutorials](https://www.eclipse.org/Xtext/documentation)
 
-- [Xtext scoping documentation](https://www.eclipse.org/Xtext/documentation/Scoping)
-
 - [Xtext Scoping documentation](https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#scoping)
 
 - [Xtext Declarative Scope Provider documentation](http://download.eclipse.org/modeling/tmf/xtext/javadoc/2.3/org/eclipse/xtext/scoping/impl/AbstractDeclarativeScopeProvider.html)
