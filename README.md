@@ -62,11 +62,11 @@ Then, refresh the state of the EPackage registry by clicking on the *Refresh* sy
 
 If a package with the same *Name* and *Ns URI* as depicted in your Ecore metamodel exists in the EPackage Registry, then the intended Ecore metamodel has already been registered.
 
-![Register metamodel](images/0-register-metamodel.png)
+![Successfully registered metamodel](images/0-successfully-registered-metamodel.png)
 
 If not, register the Ecore metamodel by right-clicking on the Ecore metamodel file in the Eclipse *Package Explorer* view followed by selection of *Register EPackages*.
 
-![Successfully registered metamodel](images/0-successfully-registered-metamodel.png)
+![Register metamodel](images/0-register-metamodel.png)
 
 Once you have seen the intended metamodel in the *EPackage Registry*, use the Eclipse wizard to create a *Xtext Project From Existing Ecore Models*.
 
