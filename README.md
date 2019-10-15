@@ -48,11 +48,29 @@ Once Xtext is installed (a restart of Eclipse is required), the Eclipse creation
 
 ### How to create a new Xtext project from an existing Ecore model:
 
-Use the Eclipse wizard to create a *Xtext Project From Existing Ecore Models*.
-
 ![Create new Xtext project from existing Ecore (part 1)](images/1-create-new-xtext-project-from-existing-ecore.png)
 
-Use the *Add* button to add the *.genmodel of your DSL to the wizard for selection.
+Before creating a new Xtext project from an existing Ecore, make sure the intended metamodel is registered beforehand. If the intended metamodel is registered successfully, it will appear in the Eclipse View named *EPackage Registry*.
+
+To open the EPackage Registry, select *Window > Show View > Other...* followed by selecting *Epsilon > EPackage Registry*.
+
+![Open EPackage Registry View](images/0-open-epackage-registry-view.png)
+
+Then, refresh the state of the EPackage registry by clicking on the *Refresh* symbol (i.e. denoted by two yellow arrows) at the top-right of the *EPackage Registry* window.
+
+![Refresh EPackage Registry](images/0-refresh-epackage-registry.png)
+
+If a package with the same *Name* and *Ns URI* as depicted in your Ecore metamodel exists in the EPackage Registry, then the intended Ecore metamodel has already been registered.
+
+![Register metamodel](images/0-register-metamodel.png)
+
+If not, register the Ecore metamodel by right-clicking on the Ecore metamodel file in the Eclipse *Package Explorer* view followed by selection of *Register EPackages*.
+
+![Successfully registered metamodel](images/0-successfully-registered-metamodel.png)
+
+Once you have seen the intended metamodel in the *EPackage Registry*, use the Eclipse wizard to create a *Xtext Project From Existing Ecore Models*.
+
+Then, use the *Add* button to add the *.genmodel of your DSL to the wizard for selection.
 
 ![Create new Xtext project from existing Ecore (part 2)](images/2-create-new-xtext-project-from-existing-ecore.png)
 
